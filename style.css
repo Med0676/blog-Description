@@ -104,13 +104,20 @@ a:focus {
     left: 10%;
     padding: 15px 25px;
     border-radius: 10px;
+    top: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 
   a {
     font-size: 16px;
     padding: 8px 20px;
+    margin-bottom: 10px;
   }
 }
+
 
 .news {
   margin: 0 auto;
@@ -389,7 +396,7 @@ footer {
 
 /* Showcase styles */
 #Description {
-border-radius:0;
+  border-radius: 0%;
   background-color: #04416dd1;
   height: 200px;
   display: flex;
@@ -629,30 +636,32 @@ table th {
   }
 /* anim */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-.txt{
-  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+
+.txt {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
 }
+
 .cont {
-    bottom: 50%;
-    z-index: 999;
+  bottom: 50%;
+  z-index: 999;
   color: #e5e5e5;
-  font-size: 2.26rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   display: flex;
- position: absolute;
+  position: absolute;
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+  height: 6vw;
+  overflow: hidden;
+  margin-left: 3vw;
 }
 
 .animation > div > div {
   padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
+  height: 6vw;
+  margin-bottom: 6vw;
+  display: inline-block;
 }
 
 .animation div:first-child {
@@ -660,27 +669,78 @@ table th {
 }
 
 .first div {
-  position: relative;left: -2.5cm;
-  background-color:#20a7d8;
+  position: relative;
+  left: -5vw;
+  background-color: #20a7d8;
 }
+
 .second div {
-  position: relative;left: -6cm;
-  background-color:#CD921E;
+  position: relative;
+  left: -12vw;
+  background-color: #CD921E;
 }
+
 .third div {
-  position: relative;left: -6cm;
-  background-color:#c10528;
+  position: relative;
+  left: -12vw;
+  background-color: #c10528;
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -30vw;
+  }
+  30% {
+    margin-top: -30vw;
+  }
+  40% {
+    margin-top: -60vw;
+  }
+  60% {
+    margin-top: -60vw;
+  }
+  70% {
+    margin-top: -30vw;
+  }
+  80% {
+    margin-top: -30vw;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 768px) {
+  .cont {
+    font-size: 2.5rem;
+  }
+
+  .animation {
+    height: 10vw;
+    margin-left: 5vw;
+  }
+
+  .animation > div > div {
+    height: 10vw;
+    margin-bottom: 10vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ .cont{
+  z-index:0;
+
+ }
+
 }
