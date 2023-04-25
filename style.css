@@ -389,6 +389,7 @@ footer {
 
 /* Showcase styles */
 #Description {
+border-radius:0;
   background-color: #04416dd1;
   height: 200px;
   display: flex;
