@@ -12,17 +12,26 @@ html {
 }
 
 video {
+  border-radius: 0%;
   z-index: 0;
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 body {
   font-family: 'Exo', sans-serif;
 }
+
+@media (max-width: 768px) {
+  video {
+    object-position: center;
+  }
+}
+
 
 :root {
   --shadow: #2776EA;
@@ -55,10 +64,10 @@ img {
 /* Responsive styles for logo */
 @media screen and (max-width: 768px) {
   img {
-    width: 80%;
-    max-width: 50px;
-    top: 1px;
-    left: 5%;
+    width: 50%;
+    max-width: 100px;
+    top: 2px;
+    left: 10%;
     transform: translateX(-50%);
   }
 }
@@ -100,21 +109,23 @@ a:focus {
 /* Responsive styles for navbar */
 @media screen and (max-width: 768px) {
   nav {
+    box-shadow: none;
+    background-color: transparent;
     width: 80%;
     left: 10%;
-    padding: 15px 25px;
+    padding: 10px 15px;
     border-radius: 10px;
-    top: 20px;
+    top: 20%;
     height: auto;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
+    flex-direction: column;
   }
 
   a {
-    font-size: 16px;
-    padding: 8px 20px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 5px;
   }
 }
 
@@ -127,7 +138,9 @@ a:focus {
 header,
 footer {
   color: white;
-  background-color: #343a40;
+  background-color: rgba(255, 255, 255, 0.075);
+  backdrop-filter: blur(8px);
+
   padding: 20px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -195,7 +208,12 @@ header {
 .details:hover {
   background-color: red;
 }
-
+@media screen and (max-width: 768px) { 
+.details {
+  z-index: 1111;
+    max-width: 90%;
+}
+}
 .context {
   z-index: 1;
   width: 100%;
@@ -208,6 +226,7 @@ header {
   color: #fff;
   font-size: 40px;
 }
+
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -371,6 +390,7 @@ header {
 /* Footer styles */
 footer {
   border-radius: 0%;
+  height: 50px;
 }
 
 .gotopbtn {
@@ -396,6 +416,7 @@ footer {
 
 /* Showcase styles */
 #Description {
+  margin-top: 1cm;
   border-radius: 0%;
   background-color: #04416dd1;
   height: 200px;
@@ -403,11 +424,11 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 #Description h1 {
-  color: black;
+  color: rgb(255, 252, 252);
   font-size: 3rem;
   margin-bottom: 90px
 }
@@ -529,7 +550,7 @@ table th {
   }
   
   #faq h2 {
-    color: #cc071e;
+    color: #000000;
     font-family: 'hm_light', sans-serif;
     font-size: 20px;
     line-height: 34px;
@@ -599,7 +620,7 @@ table th {
   #faq ul li i:before, ul li i:after {
     content: "";
     position: absolute;
-    background-color: #cc071e;
+    background-color: #023e8a;
     width: 3px;
     height: 9px;
   }
@@ -688,4 +709,11 @@ table th {
   80% {margin-top: -5.62rem;}
   90% {margin-top: 0;}
   100% {margin-top: 0;}
+}
+
+@media only screen and (max-width: 768px) {
+  .cont {
+    font-size: 1rem;
+    z-index: 0;
+  }
 }
