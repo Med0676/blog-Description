@@ -409,7 +409,7 @@ footer {
 #Description h1 {
   color: black;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 90px
 }
 
 #Description p {
@@ -587,7 +587,7 @@ table th {
     margin-top: 15px;
   }
   #faq ul li:last-of-type {
-    margin-bottom: 25px;
+    margin-bottom: 100px;
     padding-bottom: 0;
   }
   #faq ul li i {
@@ -636,12 +636,10 @@ table th {
   }
 /* anim */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-.txt {
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+.txt{
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
 }
-
-cont {
+.cont {
     bottom: 50%;
     z-index: 999;
   color: #e5e5e5;
@@ -669,6 +667,7 @@ cont {
 }
 
 .first div {
+
   background-color:#20a7d8;
 }
 .second div {
