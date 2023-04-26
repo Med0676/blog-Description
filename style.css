@@ -721,26 +721,3 @@ table th {
 
 /* Media queries for responsive design */
 
-@media only screen and (max-width: 768px) {
-  .cont {
-    font-size: 2.5rem;
-  }
-
-  .animation {
-    height: 10vw;
-    margin-left: 5vw;
-  }
-
-  .animation > div > div {
-    height: 10vw;
-    margin-bottom: 10vw;
-  }
-}
-
-@media only screen and (max-width: 480px) {
- .cont{
-  z-index:0;
-
- }
-
-}
