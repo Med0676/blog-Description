@@ -123,6 +123,7 @@ a:focus {
   }
 
   a {
+    background-color: white;
     font-size: 14px;
     padding: 6px 12px;
     margin-bottom: 5px;
